@@ -36,14 +36,18 @@ body {
   margin-bottom: 25px;
 }
 
+#Login-form input[value="Log in"] {
+  margin-bottom: 10px;
+}
+
 #Login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 
-#loding-form input::placeholder {
+#Login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
-}
+} /*0000.3*/
 
 #Login-form input:focus {
   border-color: var(--yellow);
@@ -52,13 +56,13 @@ body {
 #Login-form input[type="submit"] {
   background-color: var(--yellow);
   cursor: pointer;
-  padding: 20px 0px;
+  padding: 15px 0px;
   border-radius: 5px;
 }
 
 #Login-form a {
   text-align: center;
   text-decoration: none;
-  color: inherit;
+  color: inherit; /* default: black */
   font-size: 13px;
 }
