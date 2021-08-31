@@ -14,44 +14,36 @@
   opacity: 0.7;
 }
 
-#Login-form {
+.Login-form {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
 }
-
-#Login-form input {
+.Login-form__input {
   border: none;
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 25px;
-}
-
-#Login-form input[value="Log in"] {
-  margin-bottom: 10px;
-}
-
-#Login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
-}
-
-#Login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
-} /*0000.3*/
-
-#Login-form input:focus {
+}
+.Login-form__input:focus {
   border-color: var(--yellow);
 }
-
-#Login-form input[type="submit"] {
+.Login-form__btn {
   background-color: var(--yellow);
+  border: none;
+  font-size: 18px;
+  margin-bottom: 25px;
   cursor: pointer;
   padding: 15px 0px;
   border-radius: 5px;
 }
-
-#Login-form a {
+.Login-form__btn[value="Log in"] {
+  margin-bottom: 10px;
+}
+.Login-form__a {
   text-align: center;
   text-decoration: none;
   color: inherit; /* default: black */
