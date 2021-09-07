@@ -1,5 +1,5 @@
 .welcome-header {
-  margin: 90px 0px;
+  margin: 200px 0px 90px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -8,10 +8,12 @@
 .welcome-header__title {
   margin-bottom: 20px;
   font-size: 25px;
+  color: #F4DE93;
 }
 .welcome-header__text {
   width: 60%;
   opacity: 0.7;
+  color: rgba(244, 222, 147, 0.8);
 }
 
 .Login-form {
@@ -26,19 +28,25 @@
   margin-bottom: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
-  color: rgba(0, 0, 0, 0.4);
+  color: white; /* 원래 0,0,0,0.4 */
+  background-color: #061C25;
+}
+.Login-form__input::placeholder{
+  color: #F4DE93;
+  opacity: 90%;
 }
 .Login-form__input:focus {
-  border-color: var(--yellow);
+  border-color: #F4DE93;
 }
 .Login-form__btn {
-  background-color: var(--yellow);
+  background-color: #14555B;
   border: none;
   font-size: 18px;
   margin-bottom: 25px;
   cursor: pointer;
   padding: 15px 0px;
   border-radius: 5px;
+  color: #F4DE93;
 }
 .Login-form__btn[value="Log in"] {
   margin-bottom: 10px;
@@ -48,4 +56,34 @@
   text-decoration: none;
   color: inherit; /* default: black */
   font-size: 13px;
+}
+
+@keyframes loading {
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: scale(1.1, 1.1);
+  }
+  100%{
+    transform: none;
+  }
+}
+
+#loading-circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  top: -400px;
+  left: 50%;
+}
+
+#loading-circle img {
+  width: 450px;
+  height: 450px;
+  animation: loading 2s linear infinite;
 }
