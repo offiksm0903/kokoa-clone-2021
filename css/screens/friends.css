@@ -1,16 +1,17 @@
 #friends-display-link {
     display: block;
     text-align: center;
-    background-color: #fafafa;
+    background-color: #14555B;
     padding: 15px 0px;
     font-size: 16px;
     margin-bottom: 15px;
-    margin-top: -15px;
+    margin-top: 90px;
     
 }
 
 #friends-display-link i{
-    color: rgba(0, 0, 0, 0.3);
+    color:#F4DE93;
+    opacity: 0.8;
     padding: 0px 5px;
 }
 
@@ -18,17 +19,35 @@
     padding: 0px var(--horizontal-space);
 }
 
-.friends-screen__channel {
-    margin-top: 25px;
-    border-top: var(--main-border);
+.friends-screen__channel, .friends-screen__friends,
+.friends-screen__Multi-Profile, .friends-screen__Birthday {
+    margin-top: 15px;
+    border-top: 1px solid #F4DE93;
     padding-top: 15px;
 }
 
-.friends-screen__channel-header {
-    margin-bottom: 30px;
+.friends-screen__channel-header, .friends-screen__friends-header,
+.friends-screen__Multi-Profile-header, .friends-screen__Birthday-header {
     display: flex;
     justify-content: space-between;
-    color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.friends-screen__channel-header, 
+.friends-screen__Multi-Profile-header, .friends-screen__Birthday-header {
+    margin-bottom: 15px;
+}
+
+.friends-screen__channel-header, .friends-screen__friends-header,
+.friends-screen__Multi-Profile-header, .friends-screen__Birthday-header span {
+    font-size: 15px;
+    
+}
+
+.friends-column {
+    margin-top: 15px;
 }
 
 @keyframes hideSplashScreen {
@@ -51,8 +70,8 @@
     justify-content: center;
     align-items: center;
     /*font-size:64px;*/
-    animation: hideSplashScreen 1s ease-in-out forwards;
-    animation-delay: 0.5s; 
+    animation: hideSplashScreen 0s ease-in-out forwards;
+    animation-delay: 0s; 
 }
 
 #splash-screen img {

@@ -12,15 +12,15 @@
 <body>
     <div class="status-bar">
         <div class="status-bar__column">
-            <span>No Service</span>
+            <span>KT</span>
             <i class="fas fa-wifi"></i>
         </div>
         <div class="status-bar__column">
-            <span>18:43</span>
+            <span>09:41</span>
         </div>
         <div class="status-bar__column">
-            <span>110%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
+            <span>93%</span>
+            <i class="fas fa-battery-three-quarters fa-lg"></i>
             <i class="fas fa-bolt"></i>
         </div>
     </div>
@@ -41,35 +41,190 @@
     <main class="friends-screen">
         <div class="user-component">
             <div class="user-component__column">
-                <img src="https://avatars.githubusercontent.com/u/3612017?v=4"
-                    class="user-component__avatar user-component__avatar--xl" />
+                <img src="img/summoner.png"
+                    class="user-component__avatar user-component__avatar--xl  user-component__summoner-profile" />
                 <div class="user-component__text">
-                    <h4 class="user-component__title">Nicolas</h4>
+                    <h4 class="user-component__title">Summoner</h4>
                     <!-- h6 class="user-component__subtitle">this text whatever</h6> -->
                 </div>
             </div>
             <div class="user-component__column"></div>
         </div>
-        <div class="friends-screen__channel">
-            <div class="friends-screen__channel-header">
-                <span>Channel</span>
+
+        <!-- Multi-Profile -->
+        <div class="friends-screen__Multi-Profile">
+            <div class="friends-screen__Multi-Profile-header">
+                <span>My Multi-Profile</span>
                 <i class="fas fa-chevron-up fa-xs"></i>
             </div>
             <div class="user-component">
-                <div class="user-component__column">
-                    <img src="https://avatars.githubusercontent.com/u/3612017?v=4"
-                        class="user-component__avatar user-component__avatar--sm" />
+                <div class="user-component__column__Multi-Profile">
+                    <div class="user-component__column__Multi-Profile-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
                     <div class="user-component__text">
-                        <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+                        <h4 class="user-component__title user-component__title-Multi-Profile--not-bold"> Set up a unique
+                            profile for
+                            each friend!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Friends with Birthdays -->
+        <div class="friends-screen__Birthday">
+            <div class="friends-screen__Birthday-header">
+                <span>Friends with Birthdays</span>
+                <i class="fas fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column__Birthday">
+                    <div class="user-component__column__Birthday-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title-Birthday--not-bold"> View more
+                            birthdays</h4>
                     </div>
                 </div>
                 <div class="user-component__column">
                     <div>
                         <span>2</span>
-                        <i class="fas fa-chevron-right fa-xs"></i>
+                        <i class="fas fa-chevron-right fa-sm"></i>
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <!-- channel -->
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>Channel</span>
+                <i class="fas fa-chevron-down fa-xs"></i>
+            </div>
+        </div>
+
+
+        <!-- friends-->
+        <div class="friends-screen__friends">
+            <div class="friends-screen__friends-header">
+                <span>Friends 7</span>
+                <i class="fas fa-chevron-up fa-xs"></i>
+            </div>
+
+            <!-- Ari -->
+            <div class="user-component friends-column">
+                <div class="user-component__column">
+                    <img src="img/Ari.png" class="user-component__avatar" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Ari</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fas fa-chevron-right fa-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blitzcrank -->
+            <div class="user-component friends-column">
+                <div class="user-component__column">
+                    <img src="img/Blitzcrank.png" class="user-component__avatar" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Blitzcrank</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fas fa-chevron-right fa-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gwen -->
+            <div class="user-component friends-column">
+                <div class="user-component__column">
+                    <img src="img/Gwen.png" class="user-component__avatar" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Gwen</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fas fa-chevron-right fa-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Isreal -->
+            <div class="user-component friends-column">
+                <div class="user-component__column">
+                    <img src="img/Isreal.png" class="user-component__avatar" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Isreal</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fas fa-chevron-right fa-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jinx -->
+            <div class="user-component friends-column">
+                <div class="user-component__column">
+                    <img src="img/Jinx.png" class="user-component__avatar" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Jinx</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fas fa-chevron-right fa-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Narr -->
+            <div class="user-component friends-column">
+                <div class="user-component__column">
+                    <img src="img/Narr.png" class="user-component__avatar" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Narr</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fas fa-chevron-right fa-sm"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teemo -->
+            <div class="user-component friends-column">
+                <div class="user-component__column">
+                    <img src="img/Teemo.png" class="user-component__avatar" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Teemo</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fas fa-chevron-right fa-sm"></i>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 

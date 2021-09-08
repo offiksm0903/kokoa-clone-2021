@@ -6,6 +6,9 @@
   width: 100%;
   top: 0px;
   box-sizing: border-box;
+  background-color: #061C25;
+  color: white;
+ /* z-index: 90; */
 }
 
 .status-bar__column {
@@ -24,6 +27,6 @@
   align-items: center;
 }
 
-.status-bar .fa-battery-full {
+.status-bar .fa-battery-three-quarters {
   margin: 0px 5px;
 }

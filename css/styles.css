@@ -19,14 +19,16 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
+@import "screens/chats.css";
 @import "screens/chat.css";
 
 body {
   /* color: #2e363e; */
-  color: white;
+  color: #F4DE93;
   font-family: "Open Sans", sans-serif;
- background-color: #000913;
-  
+   background-color: #000913; 
+ 
+
 }
 
 .main-screen {
