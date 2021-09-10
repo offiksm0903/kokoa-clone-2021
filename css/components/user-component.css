@@ -1,6 +1,7 @@
 
 .user-component {
     justify-content: space-between;
+
 }
 .user-component,
 .user-component__column:first-child {
@@ -23,7 +24,8 @@
 .user-component__subtitle {
     margin-top: 8px;
     font-size: 17px;
-    color: rgba(0, 0, 0, 0.5);
+    color: #F4DE93;
+    opacity: 0.5;
     display: flex;
 }
 
@@ -101,4 +103,10 @@
 
 .user-component__column__Birthday-icon {
     background-color: #EB8181;
+}
+.user-component-chats {
+    padding: 15px 25px;
+}
+.user-component-chats:hover{
+    background-color: gray;
 }
