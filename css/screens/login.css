@@ -23,6 +23,7 @@
 }
 .Login-form__input {
   border: none;
+  border-bottom: var(--main-border);
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 25px;
