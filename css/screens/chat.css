@@ -1,6 +1,5 @@
 #chat-screen {
-    background-color: #abc1d1;
-    height: 500vh;
+    background-color: #000913;
 }
 
 #chat-screen .status-bar {
@@ -17,7 +16,7 @@
 
 #chat-screen .alt-header,
 #chat-screen .status-bar {
-    background-color: #abc1d1;
+    background-color: #061C25;
 }
 
 @keyframes fadeIn {
@@ -31,27 +30,67 @@
     }
 }
 
+@keyframes fadeInFromRight{
+    from{
+        transform: none;
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-400px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromLeft{
+    from{
+        transform: none;
+        opacity: 0;
+    }
+    to{
+        transform: translateX(400px);
+        opacity: 1;
+    }
+}
+
 .main-chat {
-    margin-top: 140px; /* if do not think about animation, 110px is enough */
+    margin-top: 130px;
+    margin-bottom: 50px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: fadeIn 0.8s linear;
+    overflow: hidden;
+}
+
+.main-chat::-webkit-scrollbar {
+    display: none;
 }
 
 .chat__timestamp {
-    color: white;
-     background-color: #92a4b2;
-     padding: 10px 15px;
-     font-size: 14px;
-     border-radius: 25px;
-     margin-bottom: 25px;
+    background-color: #061C25;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    animation: fadeIn 0.8s linear;
 }
 
 .message-row {
     width: 100%;
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    left: -400px;
+    animation: fadeInFromLeft 2s ease-in-out forwards;
+}
+
+.message-row--own {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    position: relative;
+    right: -400px;
+    animation: fadeInFromRight 2s ease-in-out forwards;
 }
 
 .message-row img {
@@ -68,8 +107,9 @@
 
 .message__bubble {
     background-color: white;
+    color: black;
     padding: 13px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 15px;
     border-top-left-radius: 0px;
     margin-right: 5px;
@@ -83,11 +123,7 @@
 .message__author,
 .message__time {
     opacity: 0.8;
-    font-size: 14px;
-}
-
-.message-row--own {
-    justify-content: flex-end;
+    font-size: 12px;
 }
 
 .message-row--own .message__bubble {
@@ -106,13 +142,13 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: white;
+    background-color: #061C25;
     display: flex;
     justify-content: space-between;
     padding: 5px 25px;
     box-sizing: border-box;
     align-items: center;
-    transition:  transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -181,8 +217,9 @@
 }
 
 .reply input:focus {
-    width: 98vw;
-    transform: translateX(-13%) translateY(-80px);
+    width: 90vw;
+    transform: translateX(-10%) translateY(-80px);
+    /* transform: translateX(-13%) translateY(-80px); */
 }
 
 .reply:focus-within{

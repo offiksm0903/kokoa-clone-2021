@@ -51,6 +51,10 @@
     
 }
 
+.open-chat {
+    margin-bottom: 80px;
+}
+
 .open-chat__header {
     display: flex;
     justify-content: space-between;

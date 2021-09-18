@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 } /* check margin-right after. now body's margin-right is 25px */
 
 .more-suggestions__icon-image {

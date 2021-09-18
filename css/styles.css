@@ -27,9 +27,12 @@ body {
   color: #F4DE93;
   font-family: "Open Sans", sans-serif;
   background-color: #000913; 
-  
+  margin-bottom: 70px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
 .main-screen {
   padding: 0px var(--horizontal-space);
 }
