@@ -2,7 +2,10 @@
 .user-component {
     justify-content: space-between;
     padding: 15px 25px;
-
+}
+.user-component-morePage {
+    justify-content: space-between;
+    padding: 15px 0px;
 }
 .user-component,
 .user-component__column:first-child {
@@ -51,7 +54,17 @@
     flex-direction: column;
     align-items: flex-end;
 }
-
+.user-component__column_music {
+    border: 2px solid #00CD3C;
+    border-radius: 20px;
+    padding: 7px;
+}
+.user-component__column_music span {
+    font-size: 15px;
+}
+.user-component__column_music i {
+    margin-left: 5px;
+}
 .user-component__time {
     margin-bottom: 10px;
     display: block;
@@ -72,7 +85,6 @@
 
 .user-component__summoner-profile {
     border: 2px solid rgba(244, 222, 147, 0.8);
-    
 }
 
 
@@ -108,6 +120,6 @@
 .user-component-chats {
     padding: 15px 25px;
 }
-.user-component-chats:hover{
+.user-component-chats:hover, .friends-column:hover{
     background-color: gray;
 }

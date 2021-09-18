@@ -37,7 +37,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
-    opacity: 0.5;
+    opacity: 0.4;
     padding-top: 15px;
     border-top: 1px solid #F4DE93;
     margin: 0px 25px;
@@ -55,8 +55,8 @@
 .friends-screen__channel-header, .friends-screen__friends-header,
 .friends-screen__Multi-Profile-header, .friends-screen__Birthday-header span {
     font-size: 15px;
-    
 }
+
 /*
 .friends-column {
     margin-top: 15px; 
@@ -76,8 +76,8 @@
 #splash-screen {
     background-color: #000913;
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%; /* 원래 100vh,vw이었음.*/
     top: 0;
     display: flex;
     justify-content: center;

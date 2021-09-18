@@ -1,6 +1,7 @@
 .settings__setting {
     padding: 20px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 0 25px;
+    border-bottom: var(--main-border);
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -12,6 +13,6 @@
     font-size: 22px;
 }
 
-.settinng__setting-column:last-child {
+.settings__setting:last-child .settinng__setting-column:last-child {
     opacity: 0.5;
 }

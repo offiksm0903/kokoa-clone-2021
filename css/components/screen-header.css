@@ -10,7 +10,7 @@
     top: 0px;
     box-sizing: border-box;
     background-color: #061C25;
-   /* z-index: 90; */
+    z-index: 90; 
     
 }
 .screen-header__title {

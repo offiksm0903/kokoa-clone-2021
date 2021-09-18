@@ -41,7 +41,6 @@
 .Recommended-friends__title {
     font-size: 14px;
     opacity: 0.5;
-  
 }
 
 .Recommended-friends span {
@@ -116,6 +115,7 @@ margin-right: 5px;
     width: 120px;
     height: 120px;
     border-radius: 10px;
+    border: 1px solid #F4DE93;
 }
 
 .open-post__heart-count {
@@ -137,6 +137,8 @@ margin-right: 5px;
 
 .first-post {
     border-bottom: 1px solid rgba(244, 222, 147, 0.4);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 @keyframes heartBeat {

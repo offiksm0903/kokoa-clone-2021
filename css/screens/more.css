@@ -1,4 +1,7 @@
-.more-screen .icon-row{
+.main-screen{
+    margin-top: var(--main-margin-top);
+}
+.icon-row{
     margin-top: 35px;
 }
 
@@ -21,20 +24,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 } /* check margin-right after. now body's margin-right is 25px */
 
 .more-suggestions__icon-image {
     width: 60px;
     height: 60px;
-    background-color: var(--yellow);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    border: 2px solid #F4DE93;
 }
-
-.more-suggestions__icon-image i {
-    font-size: 32px;
-    color: white;
+.more-suggestions__icon-image img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
