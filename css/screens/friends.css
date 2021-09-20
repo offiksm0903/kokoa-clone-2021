@@ -14,21 +14,10 @@
     opacity: 0.8;
     padding: 0px 5px;
 }
-/*
-.friends-screen {
-    padding: 0px var(--horizontal-space);
-}
-*/
+
 .friends-screen {
     margin-bottom: 73px;
-}
 
-.friends-screen__channel, .friends-screen__friends,
-.friends-screen__Multi-Profile, .friends-screen__Birthday {
-    /* margin-top: 15px; is moved id changed to padding in header */
-    /*  border-top: 1px solid #F4DE93; is moved to header */
-   /* padding-top: 15px; */
-    
 }
 
 .friends-screen__channel-header, .friends-screen__friends-header,
@@ -46,23 +35,12 @@
 .friends-screen__channel-header {
     padding-bottom: 15px;
 }
-/*
-.friends-screen__channel-header, 
-.friends-screen__Multi-Profile-header, .friends-screen__Birthday-header {
-    margin-bottom: 15px;
-}
-*/
+
 .friends-screen__channel-header, .friends-screen__friends-header,
 .friends-screen__Multi-Profile-header, .friends-screen__Birthday-header span {
     font-size: 15px;
 }
 
-/*
-.friends-column {
-    margin-top: 15px; 
-    padding: 7.5px 0px;
-}
-*/
 @keyframes hideSplashScreen {
     from{
         opacity: 1;
@@ -75,16 +53,16 @@
 
 #splash-screen {
     background-color: #000913;
-    position: absolute;
-    height: 100%;
-    width: 100%; /* 원래 100vh,vw이었음.*/
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*font-size:64px;*/
-    animation: hideSplashScreen 0s ease-in-out forwards;
-    animation-delay: 0s; 
+    animation: hideSplashScreen 1s ease-in-out forwards;
+    animation-delay: 0.5s; 
+    z-index: 99;
 }
 
 #splash-screen img {

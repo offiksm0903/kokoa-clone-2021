@@ -23,11 +23,9 @@
 @import "screens/chat.css";
 
 body {
-  /* color: #2e363e; */
   color: #F4DE93;
   font-family: "Open Sans", sans-serif;
   background-color: #000913; 
-  margin-bottom: 70px;
 }
 
 body::-webkit-scrollbar {
